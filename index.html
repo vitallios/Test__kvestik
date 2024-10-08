@@ -1,33 +1,113 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/style.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <header>
-        <div class="container">
-            <div class="header">
-                <div class="header__logo">
-                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-                <div class="header-menu">
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/style.css">
+
+  <title>К В Е С Т И К</title>
+</head>
+
+<body>
+  <header class="shadow  bg-body">
+    <nav class="navbar py-2">
+      <div class="container">
+        <div class="header w-100 d-flex flex-row justify-content-between align-items-center ">
+          <div class="header__logo">
+            <a href="/">
+              <img src="images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header-menu">
+            <ul class="d-flex align-items-center gap-5">
+              <li>
+                <a href="/" class="d-flex flex-column align-items-center">
+                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.5 16.4201V19.4201C21.5011 19.6986 21.4441 19.9743 21.3325 20.2294C21.2209 20.4846 21.0573 20.7137 20.8521 20.902C20.6468 21.0902 20.4046 21.2336 20.1407 21.3228C19.8769 21.412 19.5974 21.4452 19.32 21.4201C16.2428 21.0857 13.287 20.0342 10.69 18.3501C8.27382 16.8148 6.22533 14.7663 4.68999 12.3501C2.99997 9.7413 1.94824 6.77109 1.61999 3.6801C1.595 3.40356 1.62787 3.12486 1.71649 2.86172C1.80512 2.59859 1.94756 2.35679 2.13476 2.15172C2.32196 1.94665 2.5498 1.78281 2.80379 1.67062C3.05777 1.55843 3.33233 1.50036 3.60999 1.5001H6.60999C7.0953 1.49532 7.56579 1.66718 7.93376 1.98363C8.30173 2.30008 8.54207 2.73954 8.60999 3.2201C8.73662 4.18016 8.97144 5.12282 9.30999 6.0301C9.44454 6.38802 9.47366 6.77701 9.3939 7.15098C9.31415 7.52494 9.12886 7.86821 8.85999 8.1401L7.58999 9.4101C9.01355 11.9136 11.0864 13.9865 13.59 15.4101L14.86 14.1401C15.1319 13.8712 15.4751 13.6859 15.8491 13.6062C16.2231 13.5264 16.6121 13.5556 16.97 13.6901C17.8773 14.0286 18.8199 14.2635 19.78 14.3901C20.2658 14.4586 20.7094 14.7033 21.0265 15.0776C21.3437 15.4519 21.5122 15.9297 21.5 16.4201Z"
+                      stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span>
+                    Контакты
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/" class="d-flex flex-column align-items-center">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2 3.5H8C9.06087 3.5 10.0783 3.92143 10.8284 4.67157C11.5786 5.42172 12 6.43913 12 7.5V21.5C12 20.7044 11.6839 19.9413 11.1213 19.3787C10.5587 18.8161 9.79565 18.5 9 18.5H2V3.5Z"
+                      stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M22 3.5H16C14.9391 3.5 13.9217 3.92143 13.1716 4.67157C12.4214 5.42172 12 6.43913 12 7.5V21.5C12 20.7044 12.3161 19.9413 12.8787 19.3787C13.4413 18.8161 14.2044 18.5 15 18.5H22V3.5Z"
+                      stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span>
+                    Блог
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/" class="d-flex flex-column align-items-center">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.5 14.875C7.27337 14.875 6.09699 15.3623 5.22963 16.2296C4.36228 17.097 3.875 18.2734 3.875 19.5V21.5C3.875 21.8452 4.15482 22.125 4.5 22.125H20.5C20.8452 22.125 21.125 21.8452 21.125 21.5V19.5C21.125 18.2734 20.6377 17.097 19.7704 16.2296C18.903 15.3623 17.7266 14.875 16.5 14.875H8.5ZM19.875 20.875V19.5C19.875 18.6049 19.5194 17.7465 18.8865 17.1135C18.2535 16.4806 17.3951 16.125 16.5 16.125H8.5C7.60489 16.125 6.74645 16.4806 6.11351 17.1135C5.48058 17.7465 5.125 18.6049 5.125 19.5V20.875H19.875Z"
+                      fill="#383838" />
+                    <path
+                      d="M12.5 11.5C14.7091 11.5 16.5 9.70914 16.5 7.5C16.5 5.29086 14.7091 3.5 12.5 3.5C10.2909 3.5 8.5 5.29086 8.5 7.5C8.5 9.70914 10.2909 11.5 12.5 11.5Z"
+                      stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span>
+                    Заказы
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+
+
+      <section class="my-5">
+        <nav class="" aria-label="breadcrumb">
+          <ol class="breadcrumb gap-2 align-items-center">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <svg width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.506 3.85C7.646 3.55133 7.78133 3.29 7.912 3.066C8.052 2.842 8.18733 2.65533 8.318 2.506H0.156V1.918H8.318C8.18733 1.75933 8.052 1.568 7.912 1.344C7.78133 1.12 7.646 0.863333 7.506 0.574H7.996C8.584 1.25533 9.2 1.75933 9.844 2.086V2.338C9.2 2.65533 8.584 3.15933 7.996 3.85H7.506Z"
+                fill="#424242" />
+            </svg>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+      </section>
+      <div class="d-flex flex-row gap-3">
+        <div class="flex-3 border p-3 flex-grow-1 rounded-end">
+          <div class="w-100"></div>
+
+        </div>
+        <div class="flex-1 border p-3 w-25 rounded">
+        </div>
+      </div>
+      <section>
+
+      </section>
+    </div>
+
+  </main>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
