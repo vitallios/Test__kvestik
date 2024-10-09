@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>К В Е С Т И К</title>
 </head>
 
 <body>
   <header class="shadow  bg-body">
-    <nav class="navbar py-2">
+    <nav class="navbar py-2" role="navigation" aria-label="breadcrumb" aria-labelledby="breadcrumb">
       <div class="container">
         <div class="header w-100 col-12 d-flex flex-row justify-content-between align-items-center ">
           <div class="header__logo">
@@ -25,19 +25,19 @@
             <ul class="d-flex align-items-center gap-5">
               <li>
                 <a href="/" class="d-flex flex-column align-items-center">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M21.5 16.4201V19.4201C21.5011 19.6986 21.4441 19.9743 21.3325 20.2294C21.2209 20.4846 21.0573 20.7137 20.8521 20.902C20.6468 21.0902 20.4046 21.2336 20.1407 21.3228C19.8769 21.412 19.5974 21.4452 19.32 21.4201C16.2428 21.0857 13.287 20.0342 10.69 18.3501C8.27382 16.8148 6.22533 14.7663 4.68999 12.3501C2.99997 9.7413 1.94824 6.77109 1.61999 3.6801C1.595 3.40356 1.62787 3.12486 1.71649 2.86172C1.80512 2.59859 1.94756 2.35679 2.13476 2.15172C2.32196 1.94665 2.5498 1.78281 2.80379 1.67062C3.05777 1.55843 3.33233 1.50036 3.60999 1.5001H6.60999C7.0953 1.49532 7.56579 1.66718 7.93376 1.98363C8.30173 2.30008 8.54207 2.73954 8.60999 3.2201C8.73662 4.18016 8.97144 5.12282 9.30999 6.0301C9.44454 6.38802 9.47366 6.77701 9.3939 7.15098C9.31415 7.52494 9.12886 7.86821 8.85999 8.1401L7.58999 9.4101C9.01355 11.9136 11.0864 13.9865 13.59 15.4101L14.86 14.1401C15.1319 13.8712 15.4751 13.6859 15.8491 13.6062C16.2231 13.5264 16.6121 13.5556 16.97 13.6901C17.8773 14.0286 18.8199 14.2635 19.78 14.3901C20.2658 14.4586 20.7094 14.7033 21.0265 15.0776C21.3437 15.4519 21.5122 15.9297 21.5 16.4201Z"
                       stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
-                  <span>
+                  <span style="font-size: 10px;">
                     Контакты
                   </span>
                 </a>
               </li>
               <li>
                 <a href="/" class="d-flex flex-column align-items-center">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2 3.5H8C9.06087 3.5 10.0783 3.92143 10.8284 4.67157C11.5786 5.42172 12 6.43913 12 7.5V21.5C12 20.7044 11.6839 19.9413 11.1213 19.3787C10.5587 18.8161 9.79565 18.5 9 18.5H2V3.5Z"
                       stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
@@ -45,7 +45,7 @@
                       d="M22 3.5H16C14.9391 3.5 13.9217 3.92143 13.1716 4.67157C12.4214 5.42172 12 6.43913 12 7.5V21.5C12 20.7044 12.3161 19.9413 12.8787 19.3787C13.4413 18.8161 14.2044 18.5 15 18.5H22V3.5Z"
                       stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
-                  <span>
+                  <span style="font-size: 10px;">
                     Блог
                   </span>
                 </a>
@@ -60,7 +60,7 @@
                       d="M12.5 11.5C14.7091 11.5 16.5 9.70914 16.5 7.5C16.5 5.29086 14.7091 3.5 12.5 3.5C10.2909 3.5 8.5 5.29086 8.5 7.5C8.5 9.70914 10.2909 11.5 12.5 11.5Z"
                       stroke="#383838" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
-                  <span>
+                  <span style="font-size: 10px;">
                     Заказы
                   </span>
                 </a>
@@ -74,28 +74,112 @@
   <main>
     <div class="container">
 
-
-      <section class="my-5">
+      <!-- хлебный крошки -->
+      <section class="mt-4">
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb gap-2 align-items-center">
-            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item">
+              <a href="#" style="
+              font-size: 14px;
+          ">Главная</a>
+            </li>
             <svg width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.506 3.85C7.646 3.55133 7.78133 3.29 7.912 3.066C8.052 2.842 8.18733 2.65533 8.318 2.506H0.156V1.918H8.318C8.18733 1.75933 8.052 1.568 7.912 1.344C7.78133 1.12 7.646 0.863333 7.506 0.574H7.996C8.584 1.25533 9.2 1.75933 9.844 2.086V2.338C9.2 2.65533 8.584 3.15933 7.996 3.85H7.506Z"
                 fill="#424242" />
             </svg>
-            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+            <li class="breadcrumb-item active" aria-current="page" style="
+            font-size: 14px;
+        ">Каталог</li>
           </ol>
         </nav>
       </section>
-      <div class="d-flex flex-row gap-3">
-        <div class="flex-3 border p-3 flex-grow-1 rounded-end">
-          <div class="w-100"></div>
 
+      <div class="d-flex flex-row gap-3 col-12" style="margin-top: 32px; gap: 24px;">
+        <div class="col-9">
+          <div class="flex-3 flex-grow-1"
+            style="padding: 32px 0; padding-left: 24px; border-radius: 8px; background: linear-gradient(90deg, #FFFFFF 0%, #ffffffeb 45%, #ffffff00 70%); position: relative; ">
+            <div style="width: 100%; height: 100%;">
+              <img src="images/homeImg.png" alt="homeImg" class=""
+                style="max-width: 510px; height: 100%; background-size: cover; position: absolute; top: 0; right: 0; width: 70%;  z-index: -1; background-repeat: no-repeat;" />
+              <h1 style="z-index: 10; color: var(--text-color); font-size: 32px; font-weight: 900;">Стрелы Амура, 18+
+              </h1>
+              <div class="content d-flex" style="width: 297px; flex-direction: column; gap: 12px; margin-top: 19px;">
+                <ul class="leabls d-flex" style="flex-direction: row; flex-wrap: wrap; gap: 6px;">
+                  <li
+                    style="padding: 6px 12px; background-color: #f4f4f4; border-radius: 3px; font-size: 14px; font-weight: 600; color: var( --catr-title-color)">
+                    квест</li>
+                  <li
+                    style="padding: 6px 12px; background-color: #f4f4f4; border-radius: 3px; font-size: 14px; font-weight: 600; color: var( --catr-title-color)">
+                    для 2 человек</li>
+                  <li
+                    style="padding: 6px 12px; background-color: #f4f4f4; border-radius: 3px; font-size: 14px; font-weight: 600; color: var( --catr-title-color)">
+                    для дома</li>
+                  <li
+                    style="padding: 6px 12px; background-color: #f4f4f4; border-radius: 3px; font-size: 14px; font-weight: 600; color: var( --catr-title-color)">
+                    сложность 7/10</li>
+                </ul>
+                <p style="width: 94%;">Романтический квест по поиску подарка для второй половинки: мужа, жены, парня или
+                  девушки. Чтобы собрать 7 стрел бога любви Амура и разыскать подарок, игроку нужно выполнить задания
+                  древних богов.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Scrollbar -->
+          <div class="scrollbar"
+            style="position: relative; width: auto;height: 100%;background-color: #F5F5F5;border-radius: 8px;overflow: hidden;overflow-x: scroll;">
+            <ul style="display: flex;flex-direction: row;flex-wrap: nowrap;gap: 24px;padding: 24px;">
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="flex-1 border p-3 w-25 rounded">
+
+        <div class="flex-1"
+          style="padding: 20px 21px; height: fit-content; background: #FFFFFF; border-radius: 8px;">
+          <div>
+            <h3 style="font-size: 13px; font-weight: 600; color: var( --catr-title-color); text-align: center;">
+              Принимаем к оплате</h3>
+            <ul class="d-flex gap-3 flex-row" style="margin-top: 8px;">
+              <li><img src="images/sber.png" alt=""></li>
+              <li><img src="images/mastercard.png" alt=""></li>
+              <li><img src="images/visa.png" alt=""></li>
+              <li><img src="images/mir.png" alt=""></li>
+            </ul>
+          </div>
+          <div style="font-size: 16px;
+            text-align: center;
+            width: 86%;
+            margin: 24px auto;">
+            Я из другой страны —
+            <a href="/" style="color: #DD4E00;">
+              как оплатить?
+            </a>
+          </div>
+          <button id="vbtn" class="d-flex rounded w-100 justify-content-between align-items-center"
+            style="background-color: #DD4E00;  border: none; color: #FFFFFF; padding: 16px 24px;">
+            <span style="font-size: 16px;">Купить квест</span>
+            <span style="font-size: 16px;">500 ₽</span>
+          </button>
         </div>
       </div>
+
       <section>
 
       </section>
