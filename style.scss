@@ -30,7 +30,11 @@ ul,li{
 a{
     color: var(--catr-title-color);
     text-decoration: none;
+    &:hover{
+        color: var(--cart-text-color);
+    }
 }
+
 
 button{
     outline: none;
@@ -47,31 +51,42 @@ button:active{
     margin: 0 auto;
 }
 
-// #vbtn{
-//     transition: all .2ms linear;
-//     -webkit-transition: all .2ms linear;
-//     -moz-transition: all .2ms linear;
-//     -ms-transition: all .2ms linear;
-//     -o-transition: all .2ms linear;
-// }
+#header{
+
+}
+#breadcrumbs{
+
+}
+#katalog__content{
+    
+}
 .scrollbar{
     ul{
         overflow-x: scroll;
         li{
-            min-width: 450px;
-            height: fit-content;
-            padding: 10px;
+            min-width: 261px;
+            height: 430px;
+            span{
+                font-size: 13px;
+            }
         }
     }
 }
-#vbtn{
-    box-shadow: 0px 4px 4px #A8A8A8;
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    -o-transition: all .2s linear;
+.card__content{
+    span{
+        font-weight: 700;
+    }
+    div:last-child{
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
 }
+
 
 .scrollbar>ul::-webkit-scrollbar-track
 {

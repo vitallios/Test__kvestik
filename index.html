@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="shadow  bg-body">
+  <header id="header" class="shadow bg-body">
     <nav class="navbar py-2" role="navigation" aria-label="breadcrumb" aria-labelledby="breadcrumb">
       <div class="container">
         <div class="header w-100 col-12 d-flex flex-row justify-content-between align-items-center ">
@@ -75,7 +75,7 @@
     <div class="container">
 
       <!-- хлебный крошки -->
-      <section class="mt-4">
+      <section id="breadcrumbs" class="mt-4">
         <nav class="" aria-label="breadcrumb">
           <ol class="breadcrumb gap-2 align-items-center">
             <li class="breadcrumb-item">
@@ -95,9 +95,9 @@
         </nav>
       </section>
 
-      <div class="d-flex flex-row gap-3 col-12" style="margin-top: 32px; gap: 24px;">
-        <div class="col-9">
-          <div class="flex-3 flex-grow-1"
+      <section id="catalog" class="d-flex flex-row gap-3 col-12" style="margin-top: 32px; gap: 24px;">
+        <section id="catalog__content"  class="col-9">
+          <section id="catalog__content-item" class="flex-3 flex-grow-1"
             style="padding: 32px 0; padding-left: 24px; border-radius: 8px; background: linear-gradient(90deg, #FFFFFF 0%, #ffffffeb 45%, #ffffff00 70%); position: relative; ">
             <div style="width: 100%; height: 100%;">
               <img src="images/homeImg.png" alt="homeImg" class=""
@@ -124,35 +124,220 @@
                   древних богов.</p>
               </div>
             </div>
+          </section>
+          <section id="catalog__content-reviews">
+            <h2 class="mb-4 mt-5" style="font-size: 28px; font-weight: 900;">Отзывы клиентов <sup style="font-weight: 400; font-size: 14px;">182</sup></h2>
+            <!-- Scrollbar -->
+            <div class="scrollbar"
+              style="position: relative; width: auto; background-color: #F5F5F5;border-radius: 8px;overflow: hidden;">
+              <ul style="display: flex;flex-direction: row;flex-wrap: nowrap;gap: 24px;padding: 24px;">
+                <li class=" d-flex flex-column w-25"
+                  style="padding: 30px 24px; background-color: #FFFFFF; border-radius: 8px;">
+                  <span class="card__date" style="font-size: 13px; color: #868686;">14 февраля 2024</span>
+                  <div class="card__content" style="margin-top: 16px;">
+                    <span>Светлана (2 игрока 36 лет)</span>
+                    <div>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+  
+                    </div>
+                    <div style="margin-top: 16px;">
+                      <h4>День Рождения</h4>
+                      <p>
+                        Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                        страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                        ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class=" d-flex flex-column w-25"
+                  style="padding: 30px 24px; background-color: #FFFFFF; border-radius: 8px;">
+                  <span class="card__date" style="font-size: 13px; color: #868686;">14 февраля 2024</span>
+                  <div class="card__content" style="margin-top: 16px;">
+                    <span>Светлана (2 игрока 36 лет)</span>
+                    <div>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div style="margin-top: 16px;">
+                      <h4>День Рождения</h4>
+                      <p>
+                        Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                        страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                        ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class=" d-flex flex-column w-25"
+                  style="padding: 30px 24px; background-color: #FFFFFF; border-radius: 8px;">
+                  <span class="card__date" style="font-size: 13px; color: #868686;">14 февраля 2024</span>
+                  <div class="card__content" style="margin-top: 16px;">
+                    <span>Светлана (2 игрока 36 лет)</span>
+                    <div>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div style="margin-top: 16px;">
+                      <h4>День Рождения</h4>
+                      <p>
+                        Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                        страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                        ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class=" d-flex flex-column w-25"
+                  style="padding: 30px 24px; background-color: #FFFFFF; border-radius: 8px;">
+                  <span class="card__date" style="font-size: 13px; color: #868686;">14 февраля 2024</span>
+                  <div class="card__content" style="margin-top: 16px;">
+                    <span>Светлана (2 игрока 36 лет)</span>
+                    <div>
+                      <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span> <span>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 0L7.67871 3.68945L11.7063 4.1459L8.71622 6.88255L9.52671 10.8541L6 8.856L2.47329 10.8541L3.28378 6.88255L0.293661 4.1459L4.32129 3.68945L6 0Z"
+                            fill="#FF9D29" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div style="margin-top: 16px;">
+                      <h4>День Рождения</h4>
+                      <p>
+                        Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                        страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                        ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <div class="d-flex justify-content-center my-4">
+            <button class="btn-secondary" style="padding: 16px 130px; border-radius: 8px; background-color: #DD4E00; color: #FFFFFF;">Смотреть все отзывы</button>
           </div>
-          <!-- Scrollbar -->
-          <div class="scrollbar"
-            style="position: relative; width: auto;height: 100%;background-color: #F5F5F5;border-radius: 8px;overflow: hidden;overflow-x: scroll;">
-            <ul style="display: flex;flex-direction: row;flex-wrap: nowrap;gap: 24px;padding: 24px;">
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-              <li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro asperiores, et atque labore aspernatur iste aliquid nemo quo quos velit doloremque quasi voluptas pariatur veritatis, amet ut facere rerum.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </section>
 
-        <div class="flex-1"
-          style="padding: 20px 21px; height: fit-content; background: #FFFFFF; border-radius: 8px;">
+        <section id="catalog__payment" class="flex-1" style="padding: 20px 21px; height: fit-content; background: #FFFFFF; border-radius: 8px;  box-shadow: 0px 4px 4px #a8a8a850; position: sticky; top: 2vh;">
           <div>
             <h3 style="font-size: 13px; font-weight: 600; color: var( --catr-title-color); text-align: center;">
               Принимаем к оплате</h3>
@@ -172,16 +357,12 @@
               как оплатить?
             </a>
           </div>
-          <button id="vbtn" class="d-flex rounded w-100 justify-content-between align-items-center"
+          <button class="d-flex btn-secondary rounded w-100 justify-content-between align-items-center"
             style="background-color: #DD4E00;  border: none; color: #FFFFFF; padding: 16px 24px;">
             <span style="font-size: 16px;">Купить квест</span>
             <span style="font-size: 16px;">500 ₽</span>
           </button>
-        </div>
-      </div>
-
-      <section>
-
+        </section>
       </section>
     </div>
 
